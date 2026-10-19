@@ -13,9 +13,9 @@ Open `frontend/index.html` in a browser or use VS Code Live Server.
 ## Run the backend
 In a terminal:
 ```bash
-cd backend
 python -m venv .venv
-# Windows PowerShell: .venv\Scripts\Activate.ps1
+# Windows PowerShell: .venv\Scripts\
+cd backendActivate.ps1
 # macOS/Linux: source .venv/bin/activate
 pip install -r requirements.txt
 uvicorn main:app --reload
