@@ -22,12 +22,3 @@ uvicorn main:app --reload
 ```
 API docs: http://127.0.0.1:8000/docs
 
-## Customize before publishing
-- Replace `WHATSAPP_NUMBER` in `frontend/script.js` with your number, digits only.
-- Replace the Instagram URL in `frontend/script.js`.
-- Replace example prices and placeholder testimonials with accurate details.
-- Add your logo, photography and optimized video under `frontend/assets/`.
-- In `frontend/index.html`, uncomment the video element and add `assets/video/hero.mp4`.
-- Tighten CORS and add production security before deployment.
-
-The starter currently saves booking enquiries in SQLite. Client accounts, admin dashboard and payments are future steps.
