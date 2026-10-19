@@ -5,7 +5,7 @@ venv/
 .venv/
 env/
 
-# Secrets (never push these)
+# Secrets 
 .env
 .env.*
 
@@ -14,6 +14,6 @@ env/
 Thumbs.db
 .DS_Store
 
-# Local databases (if you add one later)
+# Local databases 
 *.db
 *.sqlite3
