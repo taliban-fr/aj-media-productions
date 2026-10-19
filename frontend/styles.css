@@ -720,7 +720,7 @@
     position: relative;
 }
 .portfolio-track {
-    position: relative;           /* needed so offsetLeft works in the JS */
+    position: relative;           
     display: flex;
     gap: 6px;
     overflow-x: auto;
@@ -729,6 +729,10 @@
     scrollbar-width: none;
 }
 .portfolio-track::-webkit-scrollbar { display: none; }
+.portfolio-item{
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+}
 
 .portfolio-item {
     flex: 0 0 auto;
@@ -765,7 +769,7 @@
     display: flex;
     justify-content: center;
     gap: 8px;
-    padding-top: 14px;
+    padding-top: 16px 0 40px;
 }
 .portfolio-dots button {
     width: 8px;
@@ -773,7 +777,7 @@
     padding: 0;
     border: none;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transition: background 0.3s ease, transform 0.3s ease;
 }
