@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJ Media House</title>
+    <!--Link to CSS file-->
+    <link rel="stylesheet" href="styles.css">
+    <!--Link to Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:ital,wght@0,100..900;1,100..900&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <!--link to bootstrap icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!--Header Section-->
+    <header class="site-header">
+        <!--Top Info Bar-->
+        <div class="top-bar">
+            <div class="top-bar-left">
+                <span>📍50504-00100,Sarit Centre, Nairobi-Kenya</span>
+            </div>
+            <div class="top-bar-right">
+                <a href="tel:+254748367708/+254793075969">
+                    <i class="bi bi-telephone" style="margin-right: 5px; color: green; height: 10px;"></i>+254 748367708/+254793075969
+                </a>
+                <a href="https://wa.me/254793079569?text=Hi">
+                    <i class="bi bi-whatsapp" style="margin-right: 5px; color: green;"></i>Send "Hi" to +254793079569
+                </a>
+                <a href="mailto:ajmedialtd@gmail.com">
+                    <i class="bi bi-envelope" style="margin-right: 5px; color: green;"></i>ajmediahouseltd@gmail.com
+                </a>
+            </div>
+        </div>
+        <!--Main Navigation-->
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="#" class="logo-container">
+                   <img src="/frontend/assets/images/logo-image.jpeg" alt="AJ-logo" class="nav-logo">
+                   <span class="brand-name"><b>AJ MEDIA</b><small>PRODUCTIONS</small></span>
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li class="drop-down">
+                    <a href="#">About Us 
+                        <span class="dropdown-arrow">▼</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Who are we - Why Us</a></li>
+                        <li><a href="#">Our Brands</a></li>
+                        <li class="has-submenu">
+                            <a href="#">Find Us - Regions/Agents<span class="submenu-arrow">›</span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">Central</a></li>
+                                <li><a href="#">Eastern</a></li>
+                                <li><a href="#">Coast</a></li>
+                                <li><a href="#">Nyanza</a></li>
+                                <li><a href="#">Riftvalley</a></li>
+                                <li><a href="#">Western</a></li>
+                                <li><a href="#">North Eastern</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Careers and Opportunities</a></li>
+                    </ul>
+                </li>
+                <li class="drop-down">
+                    <a href="#"> Our Services/Work
+                    <span class="dropdown-arrow">▼</span>
+                </a>
+                    <ul class="dropdown-menu">
+                        <!--Photography submenu-->
+                        <li class="has-submenu">
+                            <a href="#">Photography<span class="submenu-arrow">›</span>
+                            </a>
+                            <ul class="submenu">
+                                <li><a href="#">Wedding and Engagement Photography</a></li>
+                                <li><a href="#">Graduation Photography</a></li>
+                                <li><a href="#">Corporate Events Photography</a></li>
+                                <li><a href="#">Family Photography - baby showers, birthday parties</a></li>
+                                <li><a href="#">Drone and Aerial Photography</a></li>
+                                <li><a href="#">Outdoor and Indoor Photography</a></li>
+                                <li><a href="#">Product Photography</a></li>
+                                <li><a href="#">Potrait Shots Photography</a></li>
+                                <li><a href="#">Food and Hotel Photography</a></li>
+                                <li><a href="#">Wildlife Tours & Travel Photography</a></li>
+                                <li><a href="#">Studio Shots & Studio Hire Photography</a></li>
+                            </ul>
+                        </li>
+                        <!--Video submenu-->
+                        <li class="has-submenu">
+                            <a href="#">Videography <span class="submenu-arrow">›</span>
+                            </a>
+                            <ul class="submenu">
+                               <li><a href="#">Weddings Video Coverage</a></li> 
+                               <li><a href="#">Events Video Coverage</a></li> 
+                               <li><a href="#">Live Show Coverage</a></li> 
+                               <li><a href="#">Graduation Video Coverage</a></li>
+                               <li><a href="#">Funeral Video Coverage</a></li>  
+                               <li><a href="#">Drone Services</a></li> 
+                               <li><a href="#">Documentation and Production</a></li> 
+                            </ul>
+                        </li>
+                    </ul>
+            </li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <a href="#" class="btn-primary">BOOK A SESSION</a>
+        </nav>
+    </header>
+    <section class="hero">
+    <!-- LEFT: video -->
+    <div class="hero-left">
+        <video autoplay muted loop playsinline poster="https://plus.unsplash.com/premium_photo-1682097066897-209d0d9e9ae5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D">
+            <source src="assets/video/WhatsApp Video 2026-10-14 at 01.33.59.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content-left">
+            <h1>Capturing Every Moment</h1>
+            <a href="#" class="btn-primary">BOOK A SESSION</a>
+            <a href="#" class="btn-outline">
+              <i class="bi bi-arrow-right"></i> VIEW PORTFOLIO
+            </a>
+        </div>
+    </div>
+    <!--Right: Background Image-->
+    <div class="hero-right">
+        <img src="https://plus.unsplash.com/premium_photo-1682097066897-209d0d9e9ae5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"alt="AJ MEDIA Photoshoot"class="hero-photo-png">
+        <div class="hero-overlay"></div>
+        <div class="hero-content-right">
+            <h2>We Offer the Best!</h2>
+            <h3>Innovative, <span>Multimedia</span> Services</h3>
+            <p>
+                Professional Photography& Videography Services for all your
+                special moments.Lets create memories that last for a lifetime.
+            </p>
+            <ul class="hero-list">
+                <li><i class="bi bi-check-square"></i> Photography</li>
+                <li><i class="bi bi-check-square"></i> Videography</li>
+                <li><i class="bi bi-check-square"></i> Promo Videos</li>
+                <li><i class="bi bi-check-square"></i> Events Coverage</li>
+            </ul>
+        </div>
+    </div>
+    <div class="experience-badge">
+                <i class="bi bi-camera-fill"></i>
+                <span class="badge-number">10+ YEARS</span>
+                <span class="badge-text">OF EXCELLENT SERVICE</span>
+    </div>
+</section>
+<div class="category-container">
+    <!-- category bar -->
+    <div class="category-bar">
+    <!-- Item one: Wedding -->
+     <div class="category-item">
+        <i class="bi bi-heart-fill"></i>
+        <h4>WEDDING</h4>
+        <P>Timeless moments of your special day</P>
+     </div>
+         <!-- Item one: Graduation -->
+     <div class="category-item">
+        <i class="bi bi-mortarboard-fill"></i>
+        <h4>GRADUATION</h4>
+        <P>Celebrate your education journey in style</P>
+     </div>
+         <!-- Item one: Potraits -->
+     <div class="category-item">
+        <i class="bi bi-person"></i>
+        <h4>PORTRAITS</h4>
+        <P>Natural and stunning potraits</P>
+     </div>
+         <!-- Item one: Events -->
+     <div class="category-item">
+        <i class="bi bi-calendar-event"></i>
+        <h4>EVENTS</h4>
+        <P>Corporate and private events</P>
+     </div>
+         <!-- Item one: Product -->
+     <div class="category-item">
+        <i class="bi bi-box-seam"></i>
+        <h4>PRODUCT</h4>
+        <P>High-quality product photography</P>
+     </div>
+         <!-- Item one: Nature -->
+     <div class="category-item">
+        <i class="bi bi-tree"></i>
+        <h4>NATURE</h4>
+        <P>Capture the beauty of the nature</P>
+     </div>
+    </div>
+</div>
+<section class="about" id="about">
+    <div class="about-grid">
+        <div class="about-text">
+            <span class="section-kicker">Why choose Us</span>
+            <h2>AJ Media Productions - Who We Are</h2>
+            <p>
+                Welcome to AJ Media, a Nairobi-based photography and videography company.
+                We specialize in capturing and turning your special moments into timeless visuals, 
+                with an eye for expectional and creativity.
+            </p>
+            <p>
+                At AJ Media, we are committed to delivering stunning visuals and exceptional service for all your photography and videography needs. 
+                Whether it’s a corporate event, wedding, or family gathering, we bring professionalism and creativity to every project.
+            </p>
+            <div class="about-features">
+                <div class="feature">
+                    <span class="feature-icon"><i class="bi bi-clock-history"></i></span>
+                    <h3>Reliable and Timely Delivery</h3>
+                    <p>Your photos and videos delivered on time, at the quality you expect.</p>
+                </div>
+                <div class="feature">
+                    <span class="feature-icon"><i class="bi bi-camera-reels"></i></span>
+                    <h3>Comprehensive Services</h3>
+                    <p>From portraits to live events, everything under one roof.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: photo + play button -->
+        <div class="about-media">
+            <img src="assets/images/4.jpeg" alt="AJ Media team at work" loading="lazy">
+            <button class="about-play" data-src="" aria-label="Play video">
+                <i class="bi bi-play-fill"></i>
+            </button>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="stat">
+            <span class="stat-number" data-target="500" data-suffix="+">1500+</span>
+            <span class="stat-label">CLIENTS</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number" data-target="300" data-suffix="+">500+</span>
+            <span class="stat-label">EVENTS COVERED</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number" data-target="5" data-decimals="1">4.5</span>
+            <span class="stat-label">RATING</span>
+        </div>
+        <div class="stat">
+            <span class="stat-number" data-target="10" data-suffix="+">10+</span>
+            <span class="stat-label">YEARS OF OPERATION</span>
+        </div>
+    </div>
+</section>
+
+<!-- Our services section -->
+<section class="services" id="services">
+    <div class="section-head">
+        <span class="section-kicker">WHAT WE OFFER</span>
+        <h2>Our Services</h2>
+    </div>
+
+    <div class="services-grid">
+
+        <article class="service-card">
+            <span class="service-icon"><i class="bi bi-heart"></i></span>
+            <h3>Wedding Photography and Videography</h3>
+            <p>Relieve the magic of your special day with full coverage, from the preparations to the last dance, told as a story you will want to watch again.</p>
+            <a href="#" class="btn-primary">Learn more</a>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon"><i class="bi bi-briefcase"></i></span>
+            <h3>Corporate Event Photography and Videography</h3>
+            <p>From conferences and launches to team events, every key moment is documented with precision, ready for your website and social media.</p>
+            <a href="#" class="btn-primary">Learn more</a>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon"><i class="bi bi-camera-reels"></i></span>
+            <h3>Live Show Coverage</h3>
+            <p>Concerts,podcats,fashion shows and theatre productions captured in full, from the energy on stage to the reactions in the crowd.</p>
+            <a href="#" class="btn-primary">Learn more</a>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon"><i class="bi bi-airplane"></i></span>
+            <h3>Drone Photography and Videography</h3>
+            <p>Add a fresh perspective with aerial shots, ideal for large events, real estate and landscapes.</p>
+            <a href="#" class="btn-primary">Learn more</a>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon"><i class="bi bi-people"></i></span>
+            <h3>Family Photography</h3>
+            <p>Baby showers, birthdays and family gatherings, preserved as memories that last for generations.</p>
+            <a href="#" class="btn-primary">Learn more</a>
+        </article>
+
+        <article class="service-card">
+            <span class="service-icon"><i class="bi bi-person-bounding-box"></i></span>
+            <h3>Portrait Photography</h3>
+            <p>Natural, polished portraits of individuals, couples and groups, in our studio or on location.</p>
+            <a href="#" class="btn-primary">Learn more</a>
+        </article>
+    </div>
+</section>
+
+<!-- Our portolio section -->
+ <section class="portfolio" id="portfolio">
+    <div class="section-head">
+        <span class="section-kicker">OUR PORTFOLIO</span>
+        <h2>Moments We've Captured</h2>
+        <p>At AJ Media, we’ve worked with many clients to capture their special moments. 
+           From weddings to corporate events, our customizable, affordable packages bring your vision to life within your budget.</p>
+    </div>
+    <div class="portfolio-wrap">
+        <button class="portfolio-arrow prev" aria-label="Previous">‹</button>
+        <div class="portfolio-track">
+            <div class="portfolio-item"> <img src="https://images.unsplash.com/photo-1784217067204-9f72660e2bce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="corporate photo"></div>
+            <div class="portfolio-item"> <img src="assets/images/2.jpeg" alt="Potrait photo"></div>
+            <div class="portfolio-item"> <img src="assets/images/3.jpeg" alt="Wedding photo"></div>
+            <div class="portfolio-item"> <img src="assets/images/4.jpeg" alt="Graduation photo"></div>
+            <div class="portfolio-item"> <img src="https://images.unsplash.com/photo-1694199372711-c67a3b3ccc4d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Nature photo"></div>
+            <div class="portfolio-item"> <img src="https://images.unsplash.com/photo-1652256128205-3aaacc1e3c40?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Product photo"></div>
+            <div class="portfolio-item"> <img src="assets/images/5.jpeg" alt="Potrait photo"></div>
+            <div class="portfolio-item"> <img src="assets/images/6.jpeg" alt="Work photo"></div>
+            <div class="portfolio-item"> <img src="https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="live coverage"></div>
+        </div>
+        <button class="portfolio-arrow next" aria-label="Next">›</button>
+    </div>
+    <div class="portfolio-dots"></div>
+ </section>
+ <section class="intro">
+    <div class="intro-text">
+        <h2>AJ Media Photography and Videography Services in <span>Kenya</span></h2>
+        <p>
+            AJ Media Productions is a professional photography and videography
+            company based in Nairobi. We cover weddings, graduations, corporate
+            events, portraits and brand shoots, with a team of photographers,
+            videographers and editors who care about every frame.
+        </p>
+        <p>
+            Whatever the occasion, we turn it into visuals you will want to keep
+            and share for years to come.
+        </p>
+    </div>
+    <div class="intro-media">
+        <img src="https://images.unsplash.com/photo-1609607847926-da4702f01fef?q=80&w=393&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Camera on set" loading="lazy">
+    </div>
+</section>
+<section class="cta-banner">
+    <div class="cta-text">
+        <h2>Your Photography and Videography Story Starts Here!</h2>
+        <p class="cta-tags">
+            Weddings | Graduation | Portraits | Events | Product Shoots | Nature | Family | Studio Hire
+        </p>
+        <a href="#" class="btn-primary">REQUEST A QUOTE <i class="bi bi-arrow-right"></i></a>
+    </div>
+    <div class="cta-image">
+        <img src="assets/images/banner.png" alt="Photographer" loading="lazy">
+    </div>
+</section>
+<!-- PACKAGES SECTION -->
+    <section class="packages">
+        <div class="packages-container">
+            <!-- Left Side: Title and Button -->
+            <div class="packages-intro">
+                <span class="section-kicker">CHOOSE YOUR PERFECT PACKAGE</span>
+                <h2 class="section-title">Packages That Fit<br>Every Moment</h2>
+                <!-- Reusing your primary button -->
+                <a href="#" class="btn-primary" style="display: inline-block; margin-top: 10px;">VIEW PACKAGES</a>
+            </div>
+
+            <!-- Right Side: The 3 Package Columns -->
+            <div class="packages-list">
+                <!-- Basic Package -->
+                <div class="package-item">
+                    <i class="bi bi-camera"></i>
+                    <h4>BASIC</h4>
+                    <p>Perfect for small sessions & portraits</p>
+                    <span class="price">FROM $199</span>
+                </div>
+                
+                <!-- Standard Package -->
+                <div class="package-item">
+                    <i class="bi bi-camera-fill"></i>
+                    <h4>STANDARD</h4>
+                    <p>Ideal for events & engagements</p>
+                    <span class="price">FROM $499</span>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="package-item">
+                    <i class="bi bi-camera-video"></i>
+                    <h4>PREMIUM</h4>
+                    <p>Complete coverage for your big day</p>
+                    <span class="price">FROM $999</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials">
+        <div class="testimonials-header">
+            <span class="section-kicker">KIND WORDS</span>
+            <h2 class="section-title">What Our Clients Say</h2>
+            <div class="title-divider">
+                <span>◆</span>
+            </div>
+        </div>
+
+        <div class="testimonials-slider">
+            <!-- Left Arrow -->
+            <button class="slider-btn"><i class="bi bi-chevron-left"></i></button>
+
+            <!-- Testimonial Cards Container -->
+            <div class="testimonials-track">
+                <!-- Card 1 -->
+                <div class="testimonial-card">
+                    <p class="quote">"Amazing experience! The photos turned out better than we imagined. Highly professional and super easy to work with."</p>
+                    <div class="client-info">
+                        <img src="https://plus.unsplash.com/premium_photo-1741884924087-21116668f724?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sarah Johnson" class="client-avatar">
+                        <div class="client-details">
+                            <h4>Sarah Johnson</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testimonial-card">
+                    <p class="quote">"Incredible eye for detail and creativity. Captured our wedding day so beautifully. We will cherish these forever!"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1571512599285-9ac4fdf3dba9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Michael & Emily" class="client-avatar">
+                        <div class="client-details">
+                            <h4>Michael & Emily</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testimonial-card">
+                    <p class="quote">"Very professional, punctual and talented. The photos speak for themselves. Highly recommended!"</p>
+                    <div class="client-info">
+                        <img src="https://images.unsplash.com/photo-1587397845856-e6cf49176c70?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="David Thompson" class="client-avatar">
+                        <div class="client-details">
+                            <h4>David Thompson</h4>
+                            <div class="stars">
+                                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Arrow -->
+            <button class="slider-btn"><i class="bi bi-chevron-right"></i></button>
+        </div>
+    </section>
+    <!-- FOOTER SECTION -->
+    <footer class="site-footer">
+        <!-- Top: Instagram Feed -->
+        <div class="footer-instagram">
+            <div class="insta-text">
+                <span class="insta-kicker">FOLLOW US ON INSTAGRAM</span>
+                <a href="#" class="insta-handle">@ajmedia_productions</a>
+            </div>
+            <div class="insta-images">
+                <img src="https://images.unsplash.com/photo-1596457221755-b96bc3a6df18?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Instagram 1">
+                <img src="https://images.unsplash.com/photo-1623577284502-d65cdc6ba0b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Instagram 2">
+                <img src="https://plus.unsplash.com/premium_photo-1738014944019-6a2caf4612de?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Instagram 3">
+                <img src="https://images.unsplash.com/photo-1618151444381-4ee6c3b2205a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Instagram 4">
+                <img src="https://plus.unsplash.com/premium_photo-1726869694722-66df5f9621b8?q=80&w=779&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Instagram 5">
+                <img src="https://plus.unsplash.com/premium_photo-1714397507054-b34acc119eb5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Instagram 6">
+                <img src="https://plus.unsplash.com/premium_photo-1730233719882-890f7043eb9e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Instagram 7">
+            </div>
+        </div>
+
+        <!-- Middle: Main Footer Columns -->
+        <div class="footer-main">
+            <!-- Column 1: Brand -->
+            <div class="footer-col brand-col">
+                <a href="#" class="logo-container" style="margin-bottom: 20px;">
+                    <span class="brand-name">
+                        <b style="font-size: 1.2rem;">AJ MEDIA</b><br>
+                        <small style="font-size: 0.6rem; letter-spacing: 3px; color: var(--primary-color);">PRODUCTIONS</small>
+                    </span>
+                </a>
+                <p>Capturing real moments and creating timeless memories. Let's tell your story through our lens.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-pinterest"></i></a>
+                    <a href="#"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col">
+                <h4>QUICK LINKS</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Packages</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Services -->
+            <div class="footer-col">
+                <h4>SERVICES</h4>
+                <ul>
+                    <li><a href="#">Wedding Photography</a></li>
+                    <li><a href="#">Portrait Photography</a></li>
+                    <li><a href="#">Event Photography</a></li>
+                    <li><a href="#">Product Photography</a></li>
+                    <li><a href="#">Commercial Photography</a></li>
+                    <li><a href="#">Nature Photography</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 4: Information -->
+            <div class="footer-col">
+                <h4>INFORMATION</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Pricing & Packages</a></li>
+                    <li><a href="#">Booking Process</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 5: Newsletter -->
+            <div class="footer-col newsletter-col">
+                <h4>NEWSLETTER</h4>
+                <p>Subscribe to get exclusive offers & photography tips!</p>
+                <form action="#" class="newsletter-form">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="bi bi-arrow-right-short"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Bottom: Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2026 AJ Media Productions. All Rights Reserved.</p>
+            <p>We <i class="bi bi-heart-fill" style="color: var(--primary-color);"></i> you</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
