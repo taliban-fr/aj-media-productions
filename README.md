@@ -1,5 +1,4 @@
 # AJ Media Productions
-Responsive photography website starter based on your Lenscraft reference.
 
 ## Structure
 - `frontend/index.html` — homepage
