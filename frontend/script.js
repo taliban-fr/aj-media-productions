@@ -1,3 +1,33 @@
+// ---------- MOBILE MENU ----------
+const menuToggle = document.getElementById('menuToggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', open);
+    menuToggle.textContent = open ? '✕' : '☰';
+});
+
+// on phones, tapping a dropdown title opens it instead of following the link
+document.querySelectorAll('.drop-down > a, .has-submenu > a').forEach(link => {
+    link.addEventListener('click', e => {
+        if (window.innerWidth <= 992) {
+            e.preventDefault();
+            link.parentElement.classList.toggle('open');
+        }
+    });
+});
+
+// reset everything when the window goes back to desktop size
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 992) {
+        document.querySelectorAll('.nav-links.open, .nav-links .open')
+            .forEach(el => el.classList.remove('open'));
+        menuToggle.textContent = '☰';
+        menuToggle.setAttribute('aria-expanded', 'false');
+    }
+});
+
 // ---------- PORTFOLIO STRIP ----------
 const pTrack = document.querySelector('.portfolio-track');
 
