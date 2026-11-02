@@ -6,6 +6,7 @@
     <title>AJ Media House</title>
     <!--Link to CSS file-->
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="home-extras.css">
     <!--Link to Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,9 +44,9 @@
             </div>
             <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
             <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#top" class="active">Home</a></li>
                 <li class="drop-down">
-                    <a href="#">About Us 
+                    <a href="#about">About Us 
                         <span class="dropdown-arrow">▼</span>
                     </a>
                     <ul class="dropdown-menu">
@@ -68,7 +69,7 @@
                     </ul>
                 </li>
                 <li class="drop-down">
-                    <a href="#"> Our Services/Work
+                    <a href="#services"> Our Services/Work
                     <span class="dropdown-arrow">▼</span>
                 </a>
                     <ul class="dropdown-menu">
@@ -111,10 +112,10 @@
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
-            <a href="#" class="btn-primary">BOOK A SESSION</a>
+            <a href="quote.html" class="btn-primary">BOOK A SESSION</a>
         </nav>
     </header>
-    <section class="hero">
+    <section class="hero" id="top">
     <!-- LEFT: video -->
     <div class="hero-left">
         <video autoplay muted loop playsinline poster="https://plus.unsplash.com/premium_photo-1682097066897-209d0d9e9ae5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D">
@@ -353,7 +354,7 @@
         <p class="cta-tags">
             Weddings | Graduation | Portraits | Events | Product Shoots | Nature | Family | Studio Hire
         </p>
-        <a href="#" class="btn-primary">REQUEST A QUOTE <i class="bi bi-arrow-right"></i></a>
+        <a href="quote.html?type=quote" class="btn-primary">REQUEST A QUOTE <i class="bi bi-arrow-right"></i></a>
     </div>
     <div class="cta-image">
         <img src="assets/images/banner.png" alt="Photographer" loading="lazy">
@@ -554,6 +555,15 @@
             <p>We <i class="bi bi-heart-fill" style="color: var(--primary-color);"></i> you</p>
         </div>
     </footer>
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<div class="video-modal" id="videoModal" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+    <button class="video-modal-close" aria-label="Close video">&times;</button>
+    <div class="video-modal-body"></div>
+</div>
 <script src="script.js"></script>
+<script src="home.js"></script>
 </body>
 </html>

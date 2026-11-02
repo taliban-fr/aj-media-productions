@@ -1,8 +1,3 @@
-/* =========================================================
-   bootstrap-theme.css
-   Shared by the Bootstrap pages (packages.html, contact.html, ...)
-   Load it AFTER bootstrap.min.css. Do NOT load it on index.html.
-   ========================================================= */
 
 :root {
     --charcoal: #171717;
@@ -13,7 +8,6 @@
     --cream: #f5f2ee;
     --ink: #2a2a2a;
 
-    /* Bootstrap 5.3 reads these variables, so overriding them re-themes the page */
     --bs-body-font-family: "Poppins", sans-serif;
     --bs-body-bg: var(--cream);
     --bs-body-color: var(--ink);
@@ -79,7 +73,6 @@ h1, h2, h3, .h1, .h2, .h3, .display-4 {
     font-size: 0.8rem;
 }
 
-/* open dropdowns on hover for desktop, like the homepage */
 @media (min-width: 992px) {
     .site-navbar .dropdown:hover > .dropdown-menu { display: block; margin-top: 0; }
 }
@@ -353,3 +346,7 @@ h1, h2, h3, .h1, .h2, .h3, .display-4 {
 }
 .post-title a { color: var(--charcoal); text-decoration: none; }
 .post-title a:hover { color: var(--gold-text); }
+
+.cta-image img{
+    display: block;
+}
